@@ -45,7 +45,21 @@ video {
 section {
 	overflow: hidden;
 	z-index: 2;
-	background-color: #070707;
-
 	position: relative;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	border: 0;
+}
+
+.inner-content {
+	max-width: 1200px;
+	height: auto;
+	width: 100%;
+	padding: 4rem 0rem;
+	display: flex;
+	align-items: center;
 }

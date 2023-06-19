@@ -9,7 +9,7 @@ const Hero = () => {
 		<section className={styles.hero}>
 			<div className={styles['hero-wrapper']}>
 				<Container>
-					<div className={styles['content-wrapper']}>
+					<div className={`${styles['content-wrapper']} inner-content`}>
 						<h1 className={styles.title}>Discover the Power of Yoga</h1>
 						<p className={styles.subtext}>
 							Join me on a Journey of Self-Discovery, Healing, and
