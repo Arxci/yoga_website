@@ -16,7 +16,7 @@ const Hero = () => {
 							Transformation. Whether you are a beginner or an experienced
 							practitioner.
 						</p>
-						<ButtonCTA content={'buy now'} color="invert" />
+						<ButtonCTA content={'get started'} color="invert" />
 					</div>
 				</Container>
 			</div>
