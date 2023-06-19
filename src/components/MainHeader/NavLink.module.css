@@ -1,0 +1,11 @@
+.link {
+	color: var(--dark-grey);
+	transition: color 200ms;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.link:hover,
+.link:focus {
+	color: var(--dark-pink);
+}

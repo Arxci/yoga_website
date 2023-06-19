@@ -1,7 +1,21 @@
+:root {
+	--backgroundColor: var(--dark-grey);
+	--textColor: var(--pink);
+	--hoverBackgroundColor: var(--dark-pink);
+	--hoverTextColor: var(--dark-grey);
+}
+
+.invert {
+	--backgroundColor: var(--dark-pink);
+	--textColor: var(--dark-grey);
+	--hoverBackgroundColor: var(--dark-grey);
+	--hoverTextColor: var(--pink);
+}
+
 .button {
-	background-color: var(--dark-grey);
+	background-color: var(--backgroundColor);
 	text-transform: uppercase;
-	color: var(--pink);
+	color: var(--textColor);
 	padding: 0.75rem 2rem;
 	cursor: pointer;
 	border: none;
@@ -11,6 +25,6 @@
 
 .button:hover,
 .button:focus {
-	background-color: var(--dark-pink);
-	color: var(--dark-grey);
+	background-color: var(--hoverBackgroundColor);
+	color: var(--hoverTextColor);
 }

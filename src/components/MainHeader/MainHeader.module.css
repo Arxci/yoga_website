@@ -1,11 +1,11 @@
 .header {
 	background-color: var(--pink);
-	padding: 0.25rem;
+	padding: 1rem;
 	position: fixed;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
-	z-index: 999;
+	z-index: 997;
 	top: 0;
 }
 
@@ -32,14 +32,32 @@
 	gap: 20px;
 }
 
-.link {
-	color: var(--dark-grey);
-	transition: color 200ms;
-	font-weight: 400;
-	font-size: 18px;
+.hamburger {
+	width: 30px;
+	height: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	outline: none;
+	border: none;
+	background: transparent;
 }
 
-.link:hover,
-.link:focus {
-	color: var(--dark-pink);
+.hamburger-line {
+	height: 2px;
+	width: 100%;
+	display: block;
+	background-color: var(--dark-grey);
+	transition: background-color 200ms;
+}
+
+.hamburger:focus .hamburger-line,
+.hamburger:hover .hamburger-line {
+	background-color: var(--dark-pink);
+}
+
+@media (max-width: 479px) {
+	.logo-wrapper {
+		width: 150px;
+	}
 }

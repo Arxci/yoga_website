@@ -1,5 +1,6 @@
 .hero {
 	height: 100vh;
+	max-height: 1200px;
 }
 
 .hero-wrapper {
@@ -10,7 +11,6 @@
 	align-items: center;
 	justify-content: center;
 	z-index: 2;
-	transform: translateY(65px);
 	background-color: rgba(34, 34, 34, 0.5);
 }
 
@@ -18,23 +18,23 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	max-width: 700px;
+	max-width: 800px;
 	height: auto;
 	text-align: center;
-	background-color: blue;
+	padding: 4rem 0rem;
+	gap: 20px;
 }
 
 .title {
 	font-size: 55px;
-	line-height: 12px;
-	background-color: red;
+	font-size: clamp(26px, 5vw, 60px);
 	height: max-content;
 }
 
 .subtext {
-	font-size: 18px;
+	font-size: clamp(14px, 2vw, 20px);
 	line-height: 28px;
-	background-color: green;
+	font-weight: 300;
 }
 
 .background-video {
@@ -62,4 +62,11 @@
 	bottom: -100%;
 	left: -100%;
 	right: -100%;
+}
+
+@media (max-width: 479px) {
+	.subtext {
+		margin-bottom: 1rem;
+		line-height: 20px;
+	}
 }

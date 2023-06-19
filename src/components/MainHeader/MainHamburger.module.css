@@ -1,0 +1,73 @@
+.hamburger-menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	max-width: 400px;
+	background-color: var(--pink);
+	z-index: 999;
+	padding: 0rem 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	animation: open forwards 200ms;
+}
+
+.cross {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	outline: none;
+	border: none;
+	background: transparent;
+	margin: 1rem 0rem;
+}
+
+.cross:focus .cross-line,
+.cross:hover .cross-line {
+	background-color: var(--dark-pink);
+}
+
+.cross-line {
+	height: 2px;
+	width: 100%;
+	display: block;
+	background-color: var(--dark-grey);
+}
+
+.cross-line:nth-child(1) {
+	transform-origin: left;
+	transform: rotate(45deg) translateX(5px);
+}
+
+.cross-line:nth-child(2) {
+	transform-origin: left;
+	transform: rotate(-45deg) translateX(5px);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	align-items: flex-end;
+	margin: 4rem 0rem;
+}
+
+@media (max-width: 479px) {
+	.hamburger-menu {
+		padding: 0rem 2rem;
+	}
+}
+
+@keyframes open {
+	from {
+		right: -100%;
+	}
+
+	to {
+		right: 0;
+	}
+}

@@ -1,8 +1,11 @@
 import styles from './ButtonCTA.module.css'
 
-const ButtonCTA = ({ content }) => {
+const ButtonCTA = ({ content, color }) => {
 	return (
-		<button type="button" className={styles.button}>
+		<button
+			type="button"
+			className={`${styles.button} ${color ? styles[color] : undefined}`}
+		>
 			{content}
 		</button>
 	)

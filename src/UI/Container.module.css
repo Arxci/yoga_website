@@ -2,3 +2,9 @@
 	max-width: 150rem;
 	padding: 0rem 4rem;
 }
+
+@media (max-width: 479px) {
+	.container {
+		padding: 0rem 1rem;
+	}
+}

@@ -6,12 +6,17 @@
 
 * {
 	box-sizing: border-box;
+	margin: 0rem;
+	padding: 0rem;
 }
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
-	margin: 0rem;
+}
+
+h1 {
+	font-family: 'Halant', serif;
 }
 
 a {
