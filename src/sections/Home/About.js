@@ -1,8 +1,8 @@
 import ButtonCTA from '../../UI/ButtonCTA'
 import Container from '../../UI/Container'
 import styles from './About.module.css'
-import image_01 from '../../assets/About/About-01.png'
-import image_02 from '../../assets/About/About-02.png'
+import image_01 from '../../assets/Home/About/About-01.png'
+import image_02 from '../../assets/Home/About/About-02.png'
 
 const About = () => {
 	return (
