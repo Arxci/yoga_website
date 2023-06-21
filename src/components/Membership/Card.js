@@ -20,7 +20,7 @@ const DUMMY_FEATURES = [
 		name: 'Additional resources for learning',
 	},
 	{
-		id: 3,
+		id: 4,
 		name: 'Access to new ways of relieving stress',
 	},
 ]
