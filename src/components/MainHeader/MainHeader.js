@@ -27,10 +27,10 @@ const MainHeader = () => {
 	let headerNav = (
 		<nav className={styles.nav}>
 			<ul className={styles.list}>
-				<NavLink content={'Home'} link={'/'} />
-				<NavLink content={'Instructor'} link={'/'} />
-				<NavLink content={'Classes'} link={'/'} />
-				<NavLink content={'Membership'} link={'/'} />
+				<NavLink content={'Home'} link={'/#hero'} />
+				<NavLink content={'Instructor'} link={'/#about'} />
+				<NavLink content={'Classes'} link={'/#classes'} />
+				<NavLink content={'Membership'} link={'/#membership'} />
 				<li className={styles['list-item']}>
 					<ButtonCTA content={'log in'} />
 				</li>

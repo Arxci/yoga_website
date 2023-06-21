@@ -1,13 +1,15 @@
 import ReactDOM from 'react-dom'
+import { useState } from 'react'
 import NavLink from './NavLink'
 import ButtonCTA from '../../UI/ButtonCTA'
 import styles from './MainHamburger.module.css'
 import Backdrop from '../../UI/Backdrop'
+import { useEffect } from 'react'
 
-const HamburgerMenu = ({ onClose }) => {
+const HamburgerMenu = ({ onPressed, action }) => {
 	return (
-		<div className={styles['hamburger-menu']}>
-			<button type="button" onClick={onClose} className={styles.cross}>
+		<div className={`${styles['hamburger-menu']} ${styles[action]}`}>
+			<button type="button" onClick={onPressed} className={styles.cross}>
 				<span className={styles['cross-line']}></span>
 				<span className={styles['cross-line']}></span>
 			</button>
@@ -27,14 +29,31 @@ const HamburgerMenu = ({ onClose }) => {
 }
 
 const MainHamburger = ({ onClose }) => {
+	const [action, setAction] = useState('')
+
+	const closeHandler = () => {
+		setAction('close')
+	}
+
+	useEffect(() => {
+		let t
+		if (action === 'close') {
+			t = setTimeout(() => {
+				onClose()
+			}, 200)
+		}
+
+		return () => clearTimeout(t)
+	}, [action, onClose])
+
 	return (
 		<>
 			{ReactDOM.createPortal(
-				<HamburgerMenu onClose={onClose} />,
+				<HamburgerMenu onPressed={closeHandler} action={action} />,
 				document.getElementById('hamburger-menu')
 			)}
 			{ReactDOM.createPortal(
-				<Backdrop onPressed={onClose} />,
+				<Backdrop onPressed={closeHandler} />,
 				document.getElementById('backdrop')
 			)}
 		</>

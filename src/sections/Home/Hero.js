@@ -6,7 +6,7 @@ import HeroBackgroundVideo from '../../assets/Home/Hero/HeroBackgroundVideo.mp4'
 
 const Hero = () => {
 	return (
-		<section className={styles.hero}>
+		<section className={styles.hero} id="hero">
 			<div className={styles['hero-wrapper']}>
 				<Container>
 					<div className={`${styles['content-wrapper']} inner-content`}>

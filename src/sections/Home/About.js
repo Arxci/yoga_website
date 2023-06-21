@@ -6,7 +6,7 @@ import image_02 from '../../assets/Home/About/About-02.png'
 
 const About = () => {
 	return (
-		<section className={styles.about}>
+		<section className={styles.about} id="about">
 			<div className={styles['about-wrapper']}>
 				<Container additionalStyles={styles.container}>
 					<div className={`${styles['content-wrapper']} inner-content`}>

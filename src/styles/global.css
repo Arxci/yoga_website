@@ -12,6 +12,7 @@ body::-webkit-scrollbar {
 	box-sizing: border-box;
 	margin: 0rem;
 	padding: 0rem;
+	scroll-behavior: smooth;
 }
 
 body {

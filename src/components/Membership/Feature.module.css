@@ -1,0 +1,5 @@
+@media (max-width: 991px) {
+}
+.list {
+	font-size: clamp(12px, 2vw, 16px);
+}

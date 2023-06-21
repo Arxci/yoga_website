@@ -50,7 +50,7 @@ const DUMMY_CLASSES = [
 
 const Classes = () => {
 	return (
-		<section className={styles.classes}>
+		<section className={styles.classes} id="classes">
 			<div className={styles['classes-wrapper']}>
 				<Container>
 					<div className={`${styles['content']} inner-content`}>

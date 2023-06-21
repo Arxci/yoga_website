@@ -8,6 +8,7 @@ const Banner = () => {
 		<section
 			className={styles.banner}
 			style={{ backgroundImage: `url(${banner})` }}
+			id="banner"
 		>
 			<div className={styles['banner-wrapper']}>
 				<Container additionalStyles={styles.container}>
@@ -29,3 +30,5 @@ const Banner = () => {
 }
 
 export default Banner
+
+//						style={{ backgroundImage: `url(${banner})` }}
